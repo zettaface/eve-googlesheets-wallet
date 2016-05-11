@@ -8,7 +8,8 @@ Just use the script editor to add the functions into the code.gs file
 
 ##Usage
 
-###getWalletJournal()
+
+###getWalletJournal(prefix, type, keyID, vCode, characterID)
 Creates a sheet named prefix+"\_WalletJournal"(if not exist) and then fetches all new transactions
 
 ```js
@@ -17,9 +18,9 @@ function triggerFunc() {
   transactionTypes = getTransactionTypes();
 
   //Corporation example
-  getWalletJournal("prefix1", "corp", /*Key ID*/, /*Verification Code*/);
+  getWalletJournal("prefix1", "corp", "1234567", "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ");
   //Character example
-  getWalletJournal("prefix2", "char", /*Key ID*/, /*Verification Code*/, /*Character ID*/);
+  getWalletJournal("prefix2", "char", "1234567", "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ", "1234567");
 }
 ```
 
