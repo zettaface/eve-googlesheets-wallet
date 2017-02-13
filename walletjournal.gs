@@ -71,7 +71,8 @@ function createSheet(spreadsheet, sheetName) {
     "Owner2",
     "Amount",
     "Type",
-    "Balance"
+    "Balance",
+    "Reason"
   ];
 
   var newSheet = spreadsheet.insertSheet(sheetName);
@@ -150,6 +151,7 @@ function getTransaction(row) {
     row.getAttribute("ownerName2").getValue(),
     parseFloat(row.getAttribute("amount").getValue()),
     transactionType,
-    parseFloat(row.getAttribute("balance").getValue())
+    parseFloat(row.getAttribute("balance").getValue()),
+    row.getAttribute("reason").getValue()
   ];
 }
