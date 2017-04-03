@@ -1,15 +1,14 @@
 # eve-googlesheets-wallet
 
-##Description
+## Description
 EVE Online wallet journal for Google Spreadsheets.
 
-##Installation
+## Installation
 Just use the script editor to add the functions into the code.gs file
 
-##Usage
+## Usage
 
-
-###getWalletJournal(prefix, type, keyID, vCode, characterID)
+### getWalletJournal(prefix, type, keyID, vCode, characterID)
 Creates a sheet named prefix+"\_WalletJournal"(if not exist) and then fetches all new transactions
 
 ```js
